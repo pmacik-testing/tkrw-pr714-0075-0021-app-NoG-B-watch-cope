@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-elde
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0021-tenant/tkrw-pr714-0075-0021-app/devfile-sample-elde@sha256:507fa108a5400fbe8e6092d9ffeeccfd821e6aec3772b345d698eb5d417fdbed
+        name: my-nodejs
+        resources: {}
+status: {}
